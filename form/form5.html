@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form5</title>
+  </head>
+  <body>
+    <h3>상품 주문서</h3>
+    <fieldset>
+      <legend>개인 정보</legend>
+      <div>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="여백없이 입력"
+            />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <label for="usertel">연락처</label>
+            <input
+              type="text"
+              name="usertel"
+              id="usertel"
+              placeholder="연락가능한 번호"
+            />
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>배송지 정보</legend>
+      <div>
+        <ul>
+          <li>
+            <label for="address">주소</label>
+            <input type="text" name="address" id="address" />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="text" name="tel" id="tel" />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <label for="memo">메모</label>
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>주문 정보</legend>
+      <div>
+        <ul>
+          <li>
+            <input type="checkbox" name="order1" id="order1" /> 과테밀라
+            안티구아 (100g)
+            <input type="text" name="count1" id="count1" size="5" />개
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <input type="checkbox" name="order2" id="order2" />인도네시아 만델링
+            (100g) <input type="text" name="count2" id="count2" size="5" />개
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <input type="checkbox" name="order3" id="order3" />탐나는도다 만델링
+            (100g) <input type="text" name="count3" id="count3" size="5" />개
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <div>
+      <input type="submit" value="주문하기" />
+      <input type="reset" value="다시 작성" />
+    </div>
+  </body>
+</html>

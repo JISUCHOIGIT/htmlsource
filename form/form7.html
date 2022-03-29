@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form7</title>
+    <style>
+      #userinfo {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>필수 사항</legend>
+        <div id="userinfo">
+          <label for="name">이름</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div id="userinfo">
+          <label for="email">이메일</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div id="userinfo">
+          <label for="password">비밀번호</label>
+          <input type="password" name="password" id="passowrd" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>부가 입력 사항</legend>
+        <div>
+          <label for="birth">생년월일</label>
+          <input type="date" name="birth" id="birth" />
+        </div>
+        <div>
+          <label>거주지를 선택해주세요</label><br />
+          <select name="dist" id="dist">
+            <option value="서울시">서울시</option>
+            <option value="고양시">고양시</option>
+            <option value="ㅇㅇ시">ㅇㅇ시</option>
+            <option value="ㄱㄱ시">ㄱㄱ시</option>
+            <option value="ㄴㄴ시">ㄴㄴ시</option>
+          </select>
+        </div>
+        <div>
+          <label>
+            취미
+            <input type="checkbox" name="hobby" id="read" value="read" />독서
+            <!--value-->
+            <input type="checkbox" name="hobby" id="trip" value="trip" />여행
+            <!--value-->
+            <input
+              type="checkbox"
+              name="hobby"
+              id="movie"
+              value="movie"
+            />영화감상
+            <!--value-->
+          </label>
+        </div>
+        <div>
+          <label for="gender">성별</label>
+          <input type="radio" name="gender" id="gender" value="남성" />남성
+          <!--value-->
+          <input type="radio" name="gender" id="gender_f" value="여성" />여성
+          <!--value-->
+        </div>
+        <div>
+          <label for="file">사진을 등록해 주세요</label>
+          <input type="file" name="file" id="file" />
+        </div>
+        <div>
+          <label for="info">받은 경로를 말씀해 주세요</label><br />
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit">회원가입</button>
+        <button type="reset">재작성</button>
+        <button type="button">전송</button>
+      </div>
+    </form>
+  </body>
+</html>
