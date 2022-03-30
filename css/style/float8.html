@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      background-color: #333;
+    }
+
+    ul li a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 16px;
+    }
+    ul li a:hover {
+      background-color: blueviolet;
+    }
+    ul li:first-child {
+      background-color: red;
+    }
+    ul li {
+      float: left;
+      list-style-type: none;
+    }
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+  <body>
+    <ul class="clearfix">
+      <li><a href="">Home</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+  </body>
+</html>
